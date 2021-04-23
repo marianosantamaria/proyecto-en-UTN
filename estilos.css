@@ -1,0 +1,43 @@
+
+
+:root {
+    --azul: #72c0c0;
+    --naranja: #F90;
+    --negro: #000;
+    --blanco: #FFF;
+
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--negro);
+    background-image: url(images/pattern.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/*
+h1{
+    background-color: cornsilk;
+    color: var(--azul);
+}*/
+
+.cabecera, .contenedor{
+    max-width: 1000px;
+    margin: 0;
+}
+.contenedor {
+    background-color: var(--blanco)
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    color: var(--blanco);
+
+}
