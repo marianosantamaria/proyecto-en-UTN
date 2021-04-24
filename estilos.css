@@ -2,30 +2,28 @@
     Variables CSS / Custom properties
     super-azul: #72c0c0
 */
-
+​
 /* El punto más alto del documento */
 :root {
     /* Declara las variables
         Darles un nombre y su contenido
-
+​
         Las declaramos en la raíz / root para que existan en todo el documento
     */
     --azul: #02c2c2;
     --naranja: #FE6F0F;
-    
+    --amarillo: #f8c009;
     --negro: #000;
     --blanco: #FFF;
-    --amarillo: #f8c009;
-
-
+    --espacio: 20px;
 }
-
+​
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+​
 body {
     /* Utilizamos la variable con var() */
     background-color: var(--negro);
@@ -33,20 +31,20 @@ body {
     /*
     repeat (default) | no-repeat | repeat-x | repeat-y
     background-repeat: repeat;
-
+​
     Imagen grande que cubre todo el fondo
     background-size: cover;
     */
     font-family: Arial, Helvetica, sans-serif;
 }
-
+​
 /*
 h1 {
     background-color: var(--blanco);
     color: var(--azul);
 }
 */
-
+​
 /*
     Si separamos varios selectores con , les aplicamos las mismas propiedades a esos selectores
 */
@@ -54,30 +52,34 @@ h1 {
     max-width: 1000px;
     margin: auto;
 }
-
+​
 .cabecera {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    padding: 5px 0;
+    padding: 5px 0 ;
     color: var(--naranja);
 }
-
+​
 .contenedor {
     background-color: var(--blanco);
+    /* Agregamos border-radius también al contenedor para que no se vea la esquina blanca */
     border-radius: 10px 10px 0 0;
 }
-/*-------navegacion----------*/
-
- 
-
+​
+/*
+    -------------- Navegación --------------
+*/
+​
 .nav {
     background-color: var(--naranja);
     padding: 10px;
     padding-left: 45px;
     display: flex;
     border-radius: 10px 10px 0 0;
+
+    /*separamos entre la botonera y lo de abajo*/
+    margin-bottom: 20px;
 }
 ​
 .nav-lista,
@@ -86,11 +88,10 @@ h1 {
 }
 ​
 .nav-lista {
-    
     list-style: none;
     display: flex;
 }
-​
+/* .input::placeholder */
 .nav-lista_item-link {
     display: block;
     padding: 4px 8px;
@@ -99,11 +100,37 @@ h1 {
     font-weight: bold;
     color: var(--blanco);
 }
-​.nav-lista_item-link:hover {
+.nav-lista_item-link:hover {
     text-decoration: underline;
 }
+​
 .nav-form {
-    
     display: flex;
     justify-content: flex-end;
+}
+
+.slider {
+    text-align: center;
+    background-color:blue;
+
+}
+.principal{
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: 250px 1fr ;
+    padding: 0 var(--espacio);
+    padding-top: 0;
+    margin-bottom: 100px;
+}
+.principal-categorias {
+    background-color: salmon;
+}
+.principal-productos {
+    background-color: skyblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1 fr);
+    gap: var(--espacio);
+}
+.producto {
+    background-color: steelblue;
 }
