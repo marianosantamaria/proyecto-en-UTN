@@ -1,3 +1,4 @@
+
 /*
     Variables CSS / Custom properties
     super-azul: #72c0c0
@@ -66,27 +67,20 @@ h1 {
     /* Agregamos border-radius también al contenedor para que no se vea la esquina blanca */
     border-radius: 10px 10px 0 0;
 }
-​
 /*
     -------------- Navegación --------------
 */
-​
 .nav {
     background-color: var(--naranja);
     padding: 10px;
     padding-left: 45px;
     display: flex;
-    border-radius: 10px 10px 0 0;
-
-    /*separamos entre la botonera y lo de abajo*/
-    margin-bottom: 20px;
-}
-​
-.nav-lista,
+    border-radius: 10px 10px 0 0; /*separamos entre la botonera y lo de abajo*/
+    margin-bottom: 20px;}​
+    .nav-lista,
 .nav-form {
     flex-grow: 1;
 }
-​
 .nav-lista {
     list-style: none;
     display: flex;
@@ -108,13 +102,11 @@ h1 {
     display: flex;
     justify-content: flex-end;
 }
-
+​
 .slider {
     text-align: center;
-    background-color:blue;
-
-}
-.principal{
+    background-color:blue;}
+    .principal{
     background-color: yellow;
     display: grid;
     grid-template-columns: 250px 1fr ;
